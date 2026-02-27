@@ -1,0 +1,180 @@
+Javascript:
+case sensitive 
+to program the behaviour of webpages
+<script> </script>
+javascript values:
+    Fixed values(Literals)-100,10.89
+    Variable values(variables) let a="javascript"
+    let 
+    const
+    var
+Js Keywords:
+  used to define actions to be performed
+let x=5; (can be reassigned)
+x=45
+let name;
+name="Student"
+const fname="Santhosh" (cannot be reassigned)
+const name ; (Error)
+const name="user1"
+if - mark a block of statements to be  executed on a condition
+switch - different cases
+for -in a loop
+function -declares a function
+return - exits a function
+try -implements error handling to a a block of statements
+Js comments:
+single line comment //
+Multiline comments /*    */
+javascript Identifiers:
+   An identifier is a name you given to a a variable
+let name="user1"
+name-identifier
+rules:
+let username;
+let _firstname;
+let first_name;
+let $lastname;
+ should not start with number 1digit=78  (cannot start with a number)
+  special characters are not allowed
+a="santhosh"
+let name="santhosh";
+let-varaible
+name-identifier
+
+Js operators:
+Arithmetic operators
+Assignment operators
+Comparison operators
+Logical operators
+Unary operators
+Ternary operators
+String operator
+
+Arithmetic operators:
+used for mathematical calculations
++ 
+_
+*
+/    10/5=2
+%    10%3-1
+**   2**3-8
+++   x++   (Increment)
+--   x--   (decrement)
+let a=10;
+let b=20;
+console.log(a * b);
+
+Assignment operators:
+used to assign values
+let x=10;
+let x=x+5 //  x +=5;
+let x=x-5 //  x -=5;
+let x=x*5 //  x *=5;
+let x=x/5 //  x /=5;
+
+Comparison operators:
+used to compare  values(True/False)
+==   Equal value only
+console.log(5 == "5");  True
+===  Equal value and type
+console.log(5 === "5"); False
+!=   Not equal
+!==  not equal type
+>   greater than
+<   less than
+>=   greater than or equal
+<=   less than or equal
+
+Logical operators:
+used with boolean values
+&&   logical and
+  x=6 y=3
+(x <10 && y>1)  True
+||   logical or
+(x ===5 || y===5) False
+!    logic not
+!(x===y)  True
+
+Unary operators:
+operate on one operand
+typeof
+!
+++
+--
+let x=5;
+console.log(typeof x);  number
+
+Ternary operator:
+short form of if else
+condition ? truevalue : falsevalue
+let age=18;
+let result=age>=18 ?"Adult":"Minor";
+console.log(result);
+
+string operator:
++ is also used for string concatenation
+let first ="javascript"
+let second="developer"
+console.log(first + " " + second);  javascript developer
+
+Javascript Structure and Elements:
+Elements are the basic building blocks of javascript
+1.variables:
+   let name="student";
+   const
+    var
+2.datatypes:
+     Number    10
+     string    "hello"
+     Boolean   "True/False"
+     undefined  
+     Null
+     object   {name:"user1"};
+     Array
+3.operators
+4.functions
+5.objects
+  collection of key value pairs
+  let student={ name:"student",
+                age:24
+              };
+6.Arrays
+ stores multiple values
+ let numbers=[1,2,3,5,7]
+
+Javascript structures(Control structures):
+1.Conditional statements
+if 
+let username="admin";
+let password="admin@123"
+if (username ==="admin" and password ==="admin@123"){
+  console.log("Login succesful");
+}else{
+  console.log("Invalid credentials");
+}
+if -else
+if elseif else
+switch
+  let paymentcode=prompt("Enter your payment method:");
+switch(paymentcode){
+    case "Creditcard":
+        console.log("Processing credit card payment");
+        break;
+    case "UPI":
+        console.log("Processing UPI payment");
+        break;
+    case "Netbanking":
+        console.log("Processing net banking payment");
+        break;
+    default:
+       console.log("Invalid payment method");
+}
+2.Looping structures
+for
+while
+do while
+3.Exception handling
+try
+catch
+

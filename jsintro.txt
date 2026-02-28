@@ -171,10 +171,142 @@ switch(paymentcode){
        console.log("Invalid payment method");
 }
 2.Looping structures
-for
-while
+for - lets you do a code for repetitive tasks in a specific number of time
+for(initialization;condition;update){
+}
+example:
+for(let i=0;i<5;i++){
+console.log(i);
+}
+output:
+0
+1
+2
+3
+4
+Loop through an array:
+let arr=["python","Django","Javascript"]
+for(let i=0;i<arr.length;i++)
+{
+console.log(arr[i]);
+}
+output:
+python
+Django
+Javascript
+
+for ..in loop:
+This loop iterates over the keys or property names of an object
+const person={name:"santhosh",
+              age:22,
+              city:"Tirupur"};
+for (let key in person){
+console.log(key + "=>"+person[key]);
+}
+output:
+name=>santhosh
+age=>22
+city=>Tirupur
+
+for ..of
+This loop iterates over the values of iterable objects like arrays,strings,maps and sets
+const colors=["red","blue","green"];
+for (let color of colors){
+console.log(color);
+}
+output:
+red
+blue
+green
+
+Loop through a string:
+for (let char of "hello"){
+console.log(char);
+}
+output:
+h
+e
+l
+l
+o
+
+for     repeat a fixed number of times      general looping
+for..in object keys                         objects
+for..of iterable values                     string,array,maps,sets
+while loop:
+This loop checks the condition first,and then runs the code only if the condition is true
+while(condition){
+}
+example:
+let i=1;
+while (i<=5){
+console.log(i);
+i++;
+}
+output:
+1
+2
+3
+4
+5
 do while
+it runs the loop body first before checking the condition
+do{
+//...
+}while(condition);
+example:
+let i=1;
+do{
+console.log(i);
+i++;
+}while(i<=5);
+output:
+1
+2
+3
+4
+5
+
 3.Exception handling
-try
-catch
+try -code that might throw an error
+catch-what to do if an error happens
+finally-always run code afterward
+throw-manually create your own errors
+try{
+//..
+}catch(error){
+//..
+}finally{
+//..
+}
+example1:
+try{
+notAFunction();
+}
+catch(error){
+console.log("error occurred:",error);
+}
+output:
+error occurred: ReferenceError: notAFunction is not defined
+
+example2:
+function divide(a,b){
+if (b==0){
+    throw "division by zero is not allowed";
+}
+return a/b;
+}
+try{
+console.log(divide(10,0));
+}catch(error){
+console.log("Error",error);
+}finally{
+console.log("number divided ");
+}
+output:
+ERROR!
+Error: division by zero is not allowed
+number divided 
+
+
 

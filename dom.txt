@@ -1,0 +1,77 @@
+Document object Model:
+  It is a programming interface that allows js to access and modify HTML and CSS
+
+<html>
+<body>
+<h1>hello</h1> node
+<p>welcome</p> node
+</body>
+</html>
+Different types of nodes:
+    Element Node <div><p><h1>
+    TextNode     "hello"
+    commentNode    <!--a comment -->
+    DocumentNode 
+    attrributeNode id="heading"
+selecting Elements in DOM:
+1. By id:
+    let heading=document.getElementById("title");
+2.By class:
+    let items=document.getElementByClassName("item");
+3.TagName:
+let paragrapgs=document.getElementByTagName("p");
+4.Most used
+  let element=document.querySelector("#title");
+let element=document.querySelectorAll("#title");
+
+Changing context:
+change Text:
+inner text gets or sets only the visible text content inside and element
+document.getElementById("title").innerText="NewTitle";
+Change HTML:
+Inner HTML gets or sets the HTML content including tags inside an element
+document.getElementById("title").innerHTML="<b>boldtext</b>";
+
+Changing CSS style:
+document.getElementById("title").style.color="red";
+document.getElementById("title").style.fontsize="30px";
+
+Addding new element:
+let newpara=document.createElement("p");
+newpara.innerText="This is my new para";
+document.body.appendChild(newpara);
+
+removing element:
+let element=document.getElementById("title");
+element.remove;
+element.parentNode;
+element.childNodes;
+element.firstchild;
+element.nextsibling;
+
+Objects:
+It's an collection of properties(variables) and methods(functions)
+  let student={name:"santhosh",
+              age:22,
+               greet:function(){
+                 console.log("hello");
+               }
+};
+console.log(student.name);
+student.greet()
+      name,age-properties
+      greet()-method
+      student-object   
+
+
+
+
+
+
+
+
+
+
+
+
+    

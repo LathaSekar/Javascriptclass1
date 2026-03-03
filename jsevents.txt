@@ -1,0 +1,158 @@
+ JavaScript Events 
+
+In JavaScript, events are actions that happen in the browser — either triggered by the user or by the system.
+
+Examples:
+  clicking a button, 
+  typing in a textbox, 
+  submitting a form,
+  page loading,
+  mouse hovering, etc.
+
+1.Click Event (`onclick`)
+ Triggered when a user clicks on an element.
+ Real-time Example:
+In a login page, when the user clicks **Login**, validation happens.
+<button onclick="login()">Login</button>
+
+<script>
+function login() {
+    alert("Login button clicked!");
+}
+</script>
+ Used in:
+* Submit buttons
+* Add to cart
+* Delete record
+* Save form
+
+2.Change Event (`onchange`)
+
+Triggered when the value of an input field changes.
+ Real-time Example:
+Selecting country updates state dropdown.
+<select onchange="selectCountry(this.value)">
+    <option value="">Select Country</option>
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+</select>
+
+<script>
+function selectCountry(country) {
+    console.log("Selected:", country);
+}
+</script>
+
+ Used in:
+* Dropdown selection
+* Date pickers
+* File upload fields
+
+️3. Key Events (`onkeydown`, `onkeyup`)
+
+Triggered when user presses a key.
+
+ Real-time Example:
+
+Search box auto-suggestion.
+<input type="text" onkeyup="search(this.value)" placeholder="Search">
+
+<script>
+function search(value) {
+    console.log("User typing:", value);
+}
+
+</script>
+Used in:
+* Live search
+* Password strength check
+* OTP verification
+
+
+️4. Submit Event (`onsubmit`)
+
+ Triggered when form is submitted.
+ Real-time Example:
+
+Validate form before sending to server.
+<form onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Enter name">
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+function validateForm() {
+    let name = document.getElementById("name").value;
+    if(name === "") {
+        alert("Name is required!");
+        return false;
+    }
+    return true;
+}
+</script>
+Used in:
+* Login forms
+* Registration forms
+* Payment forms
+
+
+5. Mouse Events
+
+| Event         | Description               |
+| ------------- | ------------------------- |
+| `onmouseover` | When mouse enters element |
+| `onmouseout`  | When mouse leaves         |
+| `ondblclick`  | Double click              |
+ Real-time Example:
+Hover effect for product image.
+<p onmouseover="hover()" onmouseout="out()">Hover me!</p>
+
+<script>
+function hover() {
+    console.log("Mouse entered");
+}
+function out() {
+    console.log("Mouse left");
+}
+</script>
+
+ Used in:
+* Tooltips
+* Image zoom
+* Dropdown menus
+
+️6.Load Event (`onload`)
+Triggered when page fully loads.
+ Real-time Example:
+Show welcome message after page loads.
+
+```html
+<body onload="welcome()">
+
+<script>
+function welcome() {
+    alert("Page Loaded Successfully!");
+}
+</script>
+Used in:
+
+* Initializing app
+* Loading user data
+* Showing popup notifications
+
+7.Event Listener Method (Modern Approach)
+
+Instead of inline events, we use:
+element.addEventListener("event", function)
+
+
+ Real-time Example:
+<button id="btn">Click Me</button>
+
+<script>
+document.getElementById("btn")
+    .addEventListener("click", function() {
+        alert("Button Clicked using addEventListener");
+    });
+</script>
+

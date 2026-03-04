@@ -300,6 +300,7 @@ If interviewer asks:
 How do you animate UI elements?
 
 You answer:
- We can animate UI elements using CSS transitions, keyframes, and JavaScript event listeners. JavaScript is mainly used to trigger animations dynamically based on user interaction like click, hover, scroll, or form submission.
+ We can animate UI elements using CSS transitions, keyframes, and JavaScript event listeners. 
+JavaScript is mainly used to trigger animations dynamically based on user interaction like click, hover, scroll, or form submission.
 
 
